@@ -3,3 +3,8 @@ openai>=1.0.0
 pandas
 openpyxl
 requests
+flask
+openai
+openpyxl
+pandas
+requests
