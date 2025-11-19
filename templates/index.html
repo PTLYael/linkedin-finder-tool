@@ -19,25 +19,29 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-</style>
+    </style>
 </head>
 
 <body>
+
 <div id="loader" style="display:none; text-align:center; margin-top:20px;">
     <p><strong>Processing… please wait</strong></p>
     <div class="spinner"></div>
 </div>
-    <h1>Lead LinkedIn Profile Checker</h1>
-    <p>Upload an Excel file with a column named <strong>Full Name</strong>.</p>
-    <form method="post" enctype="multipart/form-data" onsubmit="showLoader()">
-        <input type="file" name="file" accept=".xlsx,.xls" required>
-        <button type="submit">Upload and Process</button>
-    </form>
-    <script>
+
+<h1>Lead LinkedIn Profile Checker</h1>
+<p>Upload an Excel file with a column named <strong>Full Name</strong>.</p>
+
+<form method="post" enctype="multipart/form-data" onsubmit="showLoader()">
+    <input type="file" name="file" accept=".xlsx,.xls" required>
+    <button type="submit">Upload and Process</button>
+</form>
+
+<script>
 function showLoader() {
     document.getElementById("loader").style.display = "block";
 }
 </script>
-</body>
 
+</body>
 </html>
